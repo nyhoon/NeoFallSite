@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NeoFall 개인정보 처리방침</title>
+  <link rel="canonical" href="https://nyhoon.github.io/NeoFallSite/privacy.html">
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.6; max-width: 720px; margin: 2rem auto; padding: 0 1rem; color: #1a1a1a; }
+    h1 { font-size: 1.5rem; }
+    h2 { font-size: 1.1rem; margin-top: 2rem; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; margin: 1rem 0; }
+    th, td { border: 1px solid #ddd; padding: 0.5rem; text-align: left; vertical-align: top; }
+    th { background: #f5f5f5; }
+    a { color: #2563eb; }
+    .meta { color: #555; }
+  </style>
+</head>
+<body>
+  <p><a href="index.html">← NeoFall</a></p>
+  <h1>NeoFall 개인정보 처리방침</h1>
+  <p class="meta">
+    <strong>시행일:</strong> 2026년 6월 27일<br>
+    <strong>앱명:</strong> NeoFall<br>
+    <strong>운영자:</strong> [사업자명 / Neural Agent]<br>
+    <strong>문의:</strong> <a href="mailto:privacy@example.com">privacy@example.com</a>
+  </p>
+
+  <h2>1. 수집하는 개인정보</h2>
+  <p>NeoFall은 서비스 제공에 필요한 최소한의 정보만 수집합니다.</p>
+  <table>
+    <tr><th>구분</th><th>항목</th><th>수집 방법</th><th>필수 여부</th></tr>
+    <tr><td>계정</td><td>Google/Apple 계정 식별자, 이메일(인증용)</td><td>소셜 로그인</td><td>선택(게스트 가능)</td></tr>
+    <tr><td>프로필</td><td>닉네임, 국가 코드</td><td>앱 입력·기기 locale</td><td>로그인 시 닉네임 필수</td></tr>
+    <tr><td>게임</td><td>최고 점수, 깊이, 조작 모드, 생존 시간, 스킨 ID</td><td>게임 플레이</td><td>로그인 시</td></tr>
+    <tr><td>상점</td><td>코인, 스킨·꼬리 소유, 구매 내역</td><td>앱 이용</td><td>로그인 시</td></tr>
+    <tr><td>광고</td><td>광고 ID, 기기 정보</td><td>Google AdMob</td><td>게스트·회원 공통</td></tr>
+  </table>
+  <p>게스트 모드는 <strong>로컬 기기</strong>에만 기록·설정을 저장하며 서버 계정을 만들지 않습니다.</p>
+
+  <h2>2. 이용 목적</h2>
+  <ul>
+    <li>게임 서비스 제공 및 기록 저장</li>
+    <li>온라인 랭킹 운영</li>
+    <li>스킨·꼬리 상점 및 가상 코인 관리</li>
+    <li>부정 이용 방지</li>
+    <li>광고 표시(AdMob)</li>
+    <li>고객 문의 및 법령 준수</li>
+  </ul>
+
+  <h2>3. 보관 기간</h2>
+  <ul>
+    <li>회원 데이터: <strong>탈퇴 시 삭제</strong></li>
+    <li>게스트 로컬 기록: 앱 삭제·기기 초기화 시 소멸</li>
+  </ul>
+
+  <h2>4. 제3자 제공·위탁</h2>
+  <p>이용자 개인정보를 <strong>판매하지 않습니다.</strong></p>
+  <table>
+    <tr><th>수탁/제공처</th><th>목적</th><th>보관지</th></tr>
+    <tr><td>Supabase Inc.</td><td>인증·DB·랭킹·상점</td><td>일본(도쿄)</td></tr>
+    <tr><td>Google LLC</td><td>Google 로그인, AdMob</td><td><a href="https://policies.google.com/privacy">Google 정책</a></td></tr>
+    <tr><td>Apple Inc.</td><td>Apple 로그인(iOS)</td><td><a href="https://www.apple.com/legal/privacy/">Apple 정책</a></td></tr>
+  </table>
+
+  <h2>5. 이용자 권리</h2>
+  <p>열람·정정·<strong>계정 삭제</strong>·동의 철회·문의가 가능합니다.</p>
+
+  <h2>6. 계정 및 데이터 삭제</h2>
+  <p>로그인 계정 삭제 시 Auth 계정, 프로필, 랭킹, 지갑·스킨·거래 내역이 함께 삭제됩니다.</p>
+  <ul>
+    <li>앱: 설정 → 계정 삭제(추가 예정)</li>
+    <li>웹: <a href="https://nyhoon.github.io/NeoFallSite/account-deletion.html">계정 삭제 안내</a></li>
+  </ul>
+  <p>요청 접수 후 <strong>14일 이내</strong> 처리합니다.</p>
+
+  <h2>7. 아동</h2>
+  <p>만 14세 미만을 대상으로 하지 않으며, 고의로 수집하지 않습니다.</p>
+
+  <h2>8. 안전성</h2>
+  <ul>
+    <li>전송: HTTPS(TLS)</li>
+    <li>접근: Supabase RLS</li>
+    <li>삭제: 본인 인증 후 <code>delete_own_account</code> RPC</li>
+  </ul>
+
+  <h2>9. 정책 변경</h2>
+  <p>변경 시 앱 또는 본 페이지를 통해 공지합니다.</p>
+
+  <h2>10. 문의처</h2>
+  <p>
+    이메일: <a href="mailto:privacy@example.com">privacy@example.com</a><br>
+    주소: [사업장 주소]<br>
+    대표: [대표자명]
+  </p>
+</body>
+</html>
