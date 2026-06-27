@@ -19,4 +19,4 @@ NeoFall 공개 법적 문서 (GitHub Pages). 게임 소스는 Private [NeoFall](
 
 ## 수정
 
-`privacy.html`, `account-deletion.html`의 `[사업자명]`, `privacy@example.com`, 주소를 실제 정보로 바꾼 뒤 push.
+`privacy.html`, `account-deletion.html`의 `[사업자명]`, 주소를 실제 정보로 바꾼 뒤 push. 문의: neuralagent.dev@gmail.com
